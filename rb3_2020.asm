@@ -530,10 +530,10 @@ waitblit8:
 
 	add.l	#200,a2
 	move.l	a2,bltbpt(a6)
-	move.l	d6,bltcpt(a6)	      U     è  múÉæŒ 	setup the screen pointers
+	move.l	d6,bltcpt(a6)	  ; 	setup the screen pointers
 	move.l	d6,bltdpt(a6)
-	move.l	a3,bltapt(a6)	    	setup the bob mask
-	move.w	d3,bltsize(a6)		and blit the bob to the screen
+	move.l	a3,bltapt(a6)	   ; 	setup the bob mask
+	move.w	d3,bltsize(a6)		;and blit the bob to the screen
 	
 	rts
 
